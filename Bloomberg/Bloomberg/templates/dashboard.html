@@ -1,0 +1,174 @@
+{% extends 'base.html' %}
+
+{% block navbar %}
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto h-100">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{{ url_for('index') }}">
+                                Dashboard
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('notebook') }}">
+                                Jupyter
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('sp') }}">
+                                S&P500
+                            </a>
+                        </li>
+                       
+                    </ul>
+                    <ul class="navbar-nav">
+                       <li class="nav-item">
+                            <a class="nav-link d-block" href="{{ url_for('index') }}">
+                                Bloomberg Project
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+{% endblock %}
+
+
+{% block graph %}
+
+<div align="center" style = 'margin-top: 20px;'>
+
+		{% set plot = plots[0] %}
+	        {% for part in plot %}
+	            {{part | safe}}
+	        {% endfor %}
+
+</div>
+<style type="text/css">
+	hr{
+		border-top: 1px solid #f5a623;
+		width: 75%;
+		margin-top: 40px;
+	}
+</style>
+<hr>
+<div style = "margin-top:60px;">
+		<div style = "width: 50%; margin-left: 140px; float: left;">
+			<H1 style = "color: #6e84a3; font-family: 'Raleway';" align = "center">Share Information</H1>
+			<div style = 'height: 500px; background-color: #142e4d; text-align: center;'>
+				<style>
+					table{
+						border-collapse:separate;
+		    			border-radius:6px;
+		    			-moz-border-radius:6px;
+		    			height: 250px;
+		    			background-color: #142e4d;
+		    			width: 100%;
+					}
+				</style>
+				<H2 style = 'color: #6e84a3; margin-bottom: 70px' align = "center">
+					<script> document.write(new Date().toDateString()); </script>
+				</H2>
+				<table>
+					<tbody>
+					<tr>
+					<td style = 'color: #f5a623;'>{{ table_headers[0] }}</td><td>{{ table_data[0] }}</td><td style = 'color: #f5a623;'>{{ table_headers[4] }}</td><td>{{ table_data[4] }}</td></tr>
+					<tr>
+					<td style = 'color: #f5a623;'>{{ table_headers[1] }}</td><td>{{ table_data[1] }}</td><td style = 'color: #f5a623;'>{{ table_headers[5] }}</td><td>{{ table_data[5] }}</td></tr>
+					<tr>
+					<td style = 'color: #f5a623;'>{{ table_headers[2] }}</td><td>{{ table_data[2] }}</td><td style = 'color: #f5a623;'>{{ table_headers[6] }}</td><td>{{ table_data[6] }}</td></tr>
+					<tr>
+					<td style = 'color: #f5a623;'>{{ table_headers[3] }}</td><td>{{ table_data[3] }}</td><td style = 'color: #f5a623;'>{{ table_headers[7] }}</td><td>{{ table_data[7] }}</td></tr>
+					</tbody>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div style='margin-right: 20px; float: left;'>
+			<H1 style = "color: #6e84a3; font-family: 'Raleway';" align = "center">Prev. 25 Days Analysis</H1>
+			<div style = "margin-left: 10px">
+				{% set plot = plots[1] %}
+		        {% for part in plot %}
+		            {{part | safe}}
+		        {% endfor %}
+		    </div>
+		</div>
+	<style>
+		a{
+			text-align: left; 
+			transition: all 0.3s ease; 
+			color: #ffffff
+		}
+		a:hover{
+			text-decoration: none;
+		}
+	</style>
+	<div style = "margin-top: 50px; float: left; width: 100%;">
+		<H1 style = "color: #6e84a3; font-family: 'Raleway'" align = "center">News</H1>
+		<div style="width: 100%; margin-top: 20px; background-color: #132e4d;">
+			<div style = "display: inline-block;">
+				<img src= "{{ image_urls[0] }}" width = "250px" style = 'margin-left: 20px'>
+			</div>
+			<div style = "display: inline-block; width: 50%">
+				<a href = "{{ linkToArticle[0] }}">
+					{{ headlines[0] }}
+				</a>
+				<br>
+				<p style="font-size: 10px; color: #ffffff;">{{ descriptions[0] }}</p>
+			</div>
+		</div>
+
+		<div style="width: 100%; margin-top: 20px;">
+			<div style = "display: inline-block;">
+				<img src= "{{ image_urls[1] }}" width = "250px" style = 'margin-left: 20px'>
+			</div>
+			<div style = "display: inline-block; width: 50%">
+				<a href = "{{ linkToArticle[1] }}">
+					{{ headlines[1] }}
+				</a>
+				<br>
+				<p style="font-size: 10px; color: #ffffff;">{{ descriptions[1] }}</p>
+			</div>
+		</div>
+		<div style="width: 100%; margin-top: 20px; background-color: #132e4d;">
+			<div style = "display: inline-block;">
+				<img src= "{{ image_urls[2] }}" width = "250px" style = 'margin-left: 20px'>
+			</div>
+			<div style = "display: inline-block; width: 50%">
+				<a href = "{{ linkToArticle[2] }}">
+					{{ headlines[2] }}
+				</a>
+				<br>
+				<p style="font-size: 10px; color: #ffffff;">{{ descriptions[2] }}</p>
+			</div>
+		</div>
+
+		<div style="width: 100%; margin-top: 20px;">
+			<div style = "display: inline-block;">
+				<img src= "{{ image_urls[3] }}" width = "250px" style = 'margin-left: 20px'>
+			</div>
+			<div style = "display: inline-block; width: 50%">
+				<a href = "{{ linkToArticle[3] }}">
+					{{ headlines[3] }}
+				</a>
+				<br>
+				<p style="font-size: 10px; color: #ffffff;">{{ descriptions[3] }}</p>
+			</div>
+		</div>
+		<div style="width: 100%; margin-top: 20px; background-color: #132e4d;">
+			<div style = "display: inline-block;">
+				<img src= "{{ image_urls[4] }}" width = "250px" style = 'margin-left: 20px'>
+			</div>
+			<div style = "display: inline-block; width: 50%">
+				<a href = "{{ linkToArticle[4] }}">
+					{{ headlines[4] }}
+				</a>
+				<br>
+				<p style="font-size: 10px; color: #ffffff;">{{ descriptions[4] }}</p>
+			</div>
+		</div>		
+	</div>
+
+</div>
+
+
+{% endblock %}

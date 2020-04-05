@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block navbar %}
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto h-100">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('index') }}">
+                                Dashboard
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('notebook') }}">
+                                Jupyter
+                            </a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ url_for('sp') }}">
+                                S&P500
+                            </a>
+                        </li>
+                       
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link d-block" href="{{ url_for('index') }}">
+                                Bloomberg Project
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+{% endblock %}
+
+{% block graph %}
+<div align="center" style="margin-top: 20px;">
+	{% set plot = plots[0] %}
+	{% for part in plot %}
+		{{part | safe}}
+	{% endfor %}
+</div>
+
+<div align = "center" style="margin-top: 20px;">
+	<H1 style = "color: #FFFFFF;">Correlation Coefficients between Stocks</H1>
+	<p style = "color: #6e84a3; width: 900px; text-align: justify;">In a traditional market system, firms prices often change with each other. For example, a new breakthrough in medecine could cause share prices in both pharmaceutical companies like Actavis Generics and Bristol-Myers Squibb to rise. As a result, investing in both could result in a greater return. On the other hand, if a rise in Apple share prices has historically caused a fall in Samsung share prices, then one could purchase Apple prices and short Samsung prices for a greater return. 
+	<br><br>
+	Correlation Coefficients are statistical measurements of the relationship between two stocks. They show how stock prices move in relation to one another. The coefficients may not be the most valid method to forecast the prices of stocks, but they are useful in diversifying one's portfolio. The coeffecients are values between -1 and 1. A -1 implies an almost perfect inverse relation between stocks and a 1 implies an almost perfect direct relationship. Thus, an investment strategy could be investing in multiple companies that have correlation coefficients close to 1, or shorting companies that have a coefficient close to -1 with your initial investment. However, this would increase the amount of risk in your portfolio.
+	<br><br>
+	Correlation coefficients can be used more effectively by mitigating risk in one's portfolio. By investing in two companies with a correlation coefficient of almost 0, one can ensure that the companies are 'neutral' with respect to each other and their share prices do not affect each other. In this manner, the risk associated with the investment is lowered, and a more diversified portfolio is acheived. 
+	</p>
+</div>
+{% endblock %}

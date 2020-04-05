@@ -8,6 +8,12 @@ On the last tab, there is a correlation coefficient graph with the top 25 S&P500
 
 ![](images/home.png)
 
+## Dashboard (Apple is used as an example)
+
+![](images/dash1.png)
+![](images/dash2.png)
+![](images/dash3.png)
+
 ## Built With
 
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/) - The web framework used

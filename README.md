@@ -14,6 +14,15 @@ On the last tab, there is a correlation coefficient graph with the top 25 S&P500
 ![](images/dash2.png)
 ![](images/dash3.png)
 
+## Jupyter Page
+
+![](images/jupyter1.png)
+![](images/jupyter2.png)
+
+## Correlation Chart
+
+![](images/correlation.png)
+
 ## Built With
 
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/) - The web framework used

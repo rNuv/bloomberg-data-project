@@ -4,7 +4,7 @@ In my junior year, the Bloomberg Data center by Princeton was offering some stud
 
 On the last tab, there is a correlation coefficient graph with the top 25 S&P500 companies. Being such a volatile market, finding correlation between the price movements of two companies is important to minimize risk in a portfolio, or doubling down on risk for a greater return. 
 
-#Home Page
+## Home Page
 
 ![](images/home.png)
 

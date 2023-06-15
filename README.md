@@ -22,23 +22,32 @@ On the last tab, there is a correlation coefficient graph with the top 25 S&P500
 <div align="center">
   <img src="images/dash2.png" width="666" height="383">  
   </div>
-  <div align="center">
     <p align="center">
   Financial Metrics
 </p>
+<div>
   <img src="images/dash3.png" width="666" height="383">  
   </div>
-</div>
 <p align="center">
   News
 </p>
   
-  ![](images/jupyter1.png)
-  ![](images/jupyter2.png)
-  Jupyer Notebook
+  <div>
+  <img src="images/jupyter1.png" width="666" height="383">  
+  </div>
+  <div>
+  <img src="images/jupyter2.png" width="666" height="383">  
+  </div>
+  <p align="center">
+  Jupyter Notebook
+</p>
   
-  ![](images/correlation.png)
+  <div>
+  <img src="images/correlation.png" width="666" height="383">  
+  </div>
+  <p align="center">
   Correlation Chart
+</p>
 
 ## Technoloties
 - ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)

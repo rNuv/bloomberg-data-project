@@ -9,7 +9,7 @@ On the last tab, there is a correlation coefficient graph with the top 25 S&P500
 <div align="center">
   <img src="images/home.png" width="666" height="383">  
 </div>
-<p align="center>
+<p align="center">
   Home Page
 </p>
   

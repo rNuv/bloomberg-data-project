@@ -36,21 +36,21 @@ On the last tab, there is a correlation coefficient graph with the top 25 S&P500
   <div align="center">
   <img src="images/jupyter1.png" width="666" height="383">  
   </div>
-  <div>
+  <div align="center">
   <img src="images/jupyter2.png" width="666" height="383">  
   </div>
   <p align="center">
   Jupyter Notebook
 </p>
   
-  <div>
+  <div align="center">
   <img src="images/correlation.png" width="666" height="383">  
   </div>
   <p align="center">
   Correlation Chart
 </p>
 
-## Technoloties
+## Technologies
 - ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
 - ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 - ![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)

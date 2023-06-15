@@ -8,7 +8,10 @@ On the last tab, there is a correlation coefficient graph with the top 25 S&P500
 ## Pictures
 <div align="center">
   <img src="images/home.png" width="666" height="383">  
+</div>
+<p align="center>
   Home Page
+</p>
   
   ![](images/dash1.png)
   ![](images/dash2.png)
@@ -21,7 +24,6 @@ On the last tab, there is a correlation coefficient graph with the top 25 S&P500
   
   ![](images/correlation.png)
   Correlation Chart
-</div>
 
 ## Technoloties
 - ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)

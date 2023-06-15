@@ -12,11 +12,15 @@ On the last tab, there is a correlation coefficient graph with the top 25 S&P500
 <p align="center">
   Home Page
 </p>
-  
-  ![](images/dash1.png)
-  ![](images/dash2.png)
-  ![](images/dash3.png)
-  Deshboard
+
+<div align="center">
+  <img src="images/dash1.png" width="666" height="383">  
+  <img src="images/dash2.png" width="666" height="383">  
+  <img src="images/dash3.png" width="666" height="383">  
+</div>
+<p align="center">
+  Dashboard
+</p>
   
   ![](images/jupyter1.png)
   ![](images/jupyter2.png)
@@ -32,3 +36,6 @@ On the last tab, there is a correlation coefficient graph with the top 25 S&P500
 - ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) - Web scraping API
 - [Bokeh](https://docs.bokeh.org/en/latest/index.html) - The Visualization API
+
+---
+*Made with <3 by Arnav, circa 2020*

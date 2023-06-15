@@ -26,7 +26,7 @@ On the last tab, there is a correlation coefficient graph with the top 25 S&P500
   Financial Metrics
 </p>
 
-<div align="center>
+<div align="center">
   <img src="images/dash3.png" width="666" height="383">  
 </div>
 <p align="center">

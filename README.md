@@ -21,18 +21,19 @@ On the last tab, there is a correlation coefficient graph with the top 25 S&P500
 </p>
 <div align="center">
   <img src="images/dash2.png" width="666" height="383">  
-  </div>
-    <p align="center">
+</div>
+<p align="center">
   Financial Metrics
 </p>
-<div>
+
+<div align="center>
   <img src="images/dash3.png" width="666" height="383">  
-  </div>
+</div>
 <p align="center">
   News
 </p>
   
-  <div>
+  <div align="center">
   <img src="images/jupyter1.png" width="666" height="383">  
   </div>
   <div>
